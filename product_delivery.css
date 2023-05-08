@@ -1,6 +1,27 @@
 .container {
     background: #f1eaea;
   }
+  a, .menu {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .icon {
+    position: absolute;
+  }
+  .pedals1, .pedals2 {
+    fill: none;
+    stroke:#000;
+    stroke-width: 1.5px;
+    outline: 1px double black;
+  }
+  .pedals1 {
+    transform: rotate(45deg);
+  }
+  .circle {
+    fill: none;
+    stroke:#000;
+    stroke-width: 0.8px;
+  }
   body {
     margin:0;
     padding:0;
@@ -21,6 +42,9 @@
     align-items: center;
     cursor: pointer;
     transition: 0.8s;
+  }
+  .search-btn {
+    color: black;
   }
   .search-container:hover > .search-input{
       width: 260px;
@@ -94,21 +118,25 @@
     width: 150px;
     margin-left: 450px;
   }
-  .header_menu {
+  div.header_menu {
     height: 76px;
     top: 0px;
     background-color: #fff;
+    color:#000;
   }
   .menu li {
     position: relative;
     color: #000;
-    font-weight: 400;
-    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
     margin-left: 4rem;
-    transition: 0.3s ease;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     word-spacing: 0.2rem;
     text-transform: uppercase;
+    padding-top: 12px;
+  }
+  a.sale {
+    color:#e74040;
   }
   .menu {
     margin: 0;
@@ -119,6 +147,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#000;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.36);
   }
   .heading-section {
@@ -160,7 +189,7 @@
     font-family: Montserrat;
     font-size: 18px;
   }
-  .cart-container{
+  section.cart-container{
     width: 90%;
     height: 65%;
     background-color: #ffffff;
@@ -261,12 +290,12 @@
     font-weight: 800;
     color: #202020;
    }
-   .remove-all {
+   h5.remove-all {
     margin-top: 20px;
     font-size: 14px;
     font-family: Open Sans;
     font-weight: 500;
-    color: #E44C4C;
+    color: #eb4646;
     cursor: pointer;
    }
    .remove {
@@ -275,7 +304,7 @@
     font-size: 14px;
     font-family: Open Sans;
     font-weight: 500;
-    color: #E44C4C;
+    color: #f84242;
     cursor: pointer;
    }
    hr{
@@ -300,7 +329,7 @@
     color: #202020;
     margin-bottom: 4px;
    }
-   .items{
+   div.items{
     font-size: 15px;
     font-family: Open Sans;
     font-weight: 500;
