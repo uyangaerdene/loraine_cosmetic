@@ -1,15 +1,88 @@
 .container {
   background: #f1eaea;
 }
+body {
+  margin:0;
+  padding:0;
+  background: #ebebeb;
+}
+.search-box {
+  display: flex;
+  height: 10vh;
+  justify-content: flex-end;
+  align-items: start;
+}
+.search-container{
+  height: 25px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.search-container:hover > .search-input{
+    width: 260px;
+    background-color: white;
+    border-radius: 30px;
+    height: 30px;
+}
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.social-icon {
+  position:absolute;
+  top:10%;
+  left:15%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  display:flex;
+  font-size: 25px;
+}
+.facebook {
+  display:block;
+  color:#404040;
+  margin: 0 15px;
+  position:relative;
+}
+.twitter {
+  display:block;
+  color:#404040;
+  margin: 0 15px;
+  position:relative;
+}
+.instagram {
+  display:block;
+  color:#404040;
+  margin: 0 15px;
+  position:relative;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.instagram:hover {
+  color: #c32aa3;
+}
+.facebook:hover {
+  color: blue;
+}
 .pd-wrap {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
 .header_first {
+  display: flex;
   padding-top: 0.5rem;
   width: 100%;
-  height: 100px;
-  display: flex;
+  height: 130px;
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
@@ -18,7 +91,8 @@
 }
 .header_first img {
   height: 100%;
-  width: 120px;
+  width: 150px;
+  margin-left: 450px;
 }
 .header_menu {
   height: 76px;
@@ -168,19 +242,17 @@
   width: 100%;
   height: 48px;
   cursor: pointer;
-  margin: 10px;
+  margin-top: 10px;
 }
-
 .warn {
   display: flex;
   gap: 18px;
-  margin: 5px;
   border-radius: 12px;
   border: none;
   width: 100%;
   height: 48px;
   background: #fdf5d7;
-  margin: 10px;
+  margin-top: 10px;
 }
 .fa {
   padding: 11px;
@@ -249,28 +321,68 @@
 .product-count .qtyplus {
   width: 34px;
   height: 34px;
-  background: #212529;
+  background: #ffffff;
   text-align: center;
   font-size: 19px;
   line-height: 36px;
-  color: #fff;
+  color: black;
   cursor: pointer;
 }
 .product-count .qtyminus {
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 .product-count .qtyplus {
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.5);
 }
 .product-count .qty {
   width: 60px;
   text-align: center;
 }
+.buy {
+  display: inline-block;
+  border: none;
+  height: 35px;
+  width: 200px;
+  margin-left: 95px;
+  border-radius: 5px;
+  font-family: Inter;
+  font-size: 17px;
+  background-color: #000;
+  color:#fff;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 10px;
+}
+.more {
+  display: block;
+  border: none;
+  height: 35px;
+  width: 200px;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  background-color: #000;
+  box-shadow: 0 4px 4px 0 #191919;
+  margin-left: 45%;
+  margin-bottom: 15px;
+}
 .round-black-btn:hover,
 .round-black-btn:focus {
   background: transparent;
-  color: #212529;
+  color: #191a1b;
   text-decoration: none;
+}
+.display-flex {
+  display: flex;
 }
 .product-info-tabs {
   padding: 35px;
@@ -284,73 +396,73 @@
   padding: 20px;
   border-width: 1.7px;
 }
+.product-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
 .product_pictures {
-  display: flex;
   width: 702px;
   height: 681px;
   border: 1px solid rgba(0, 0, 0, 0.75);
 }
 .prod-box h4 {
   font-family: "Montserrat Subrayada";
-  font-style: normal;
-  font-weight: 400;
   font-size: 13px;
-  line-height: 15px;
-  align-items: center;
+  max-height: 15px;
+  margin: 0px;
   text-align: center;
   color: rgba(13, 13, 13, 0.8);
-  position: absolute;
 }
 .prod-box {
-  box-sizing: border-box;
-  display: grid;
-  width: 165px;
+  display: block;
   height: 280px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-left: 30px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 25px;
-  padding-top: -15px;
   background-color: #ffffff;
 }
 .prod-box img {
+  position: relative;
   margin: 0px;
-  display: flex;
-  flex-direction: column;
-  column-gap: 0px;
-  width: 160px;
-  height: 200px;
+  width: 100%;
+  height: 160px;
   border-radius: 25px 25px 0 0;
 }
 .prod-price {
-  position: absolute;
   font-size: 13px;
-  line-height: 15px;
-  align-items: center;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  padding-bottom: 3px;
+}
+.prod-detail {
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.36);
+  margin-top: 12px;
 }
 .add-cart {
   box-sizing: border-box;
   position: relative;
   border-radius: 0 0 25px 25px;
-  width: 163px;
-  height: 47px;
+  width: 100%;
+  height: 48px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   justify-content: bottom;
-  margin-top: 180px;
   cursor: pointer;
   font-size: 14px;
   background-color: #ffffff;
 }
-
 .add-cart:hover {
   opacity: 0.7;
 }
-.prod-box b {
-  position: absolute;
-}
 .footer {
-  display: flex;
-  height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 60vh;
   width: 96%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -359,17 +471,27 @@
 .footer ul {
   margin-top: 80px;
 }
-.footer address {
-  margin-top: 65px;
+.footer b {
+  font-size: 18px;
+  line-height: 45px;
+  color:#000;
 }
 .footer ul,
 li {
-  padding-bottom: 15px;
+  color:rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
   list-style-type: none;
+}
+.footer address {
+  padding-top: 35px;
+  color: rgba(0, 0, 0, 0.8);
 }
 .footer img {
   display: block;
-  margin-left: 450px;
-  margin-top: -180px;
-  width: 28%;
+  width: 60%;
+  margin-left: 95px;
+}
+.mark {
+  display:list-item;
+  margin-top: 90px;
 }

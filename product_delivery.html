@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head class="head1">
+        <div class="pd-wrap"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Discover Loraine's Cosmetics, the online destination for high-quality beauty products. 
         Our wide range of makeup, skincare, and haircare products are made with natural ingredients and designed to enhance your natural beauty. 
         Shop now and enjoy free shipping on orders over $50.">
-            <img src="img/l_logo.png" alt="nav_logo" height="200px" width="200px"/>
+        <link rel="stylesheet" href="product_delivery.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <ul class="social-icon">
+            <li>
+              <a class="facebook" href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="twitter" href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="instagram" href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        <div class="header_first">
+            <img src="img/l_logo.png" alt="nav_logo" />
+        <div class="search-box">
+            <div class="search-container">
+                    <input type="text" name="search" placeholder="Search..." class="search-input">
+                    <a href="#" class="search-btn">
+                            <i class="fas fa-search"></i>      
+                    </a>
+                </div>
+                </div>
+                </div>
+        <div class="header_menu">
             <ul class="menu">
                 <li><a href="/skincare.html">Арьс арчилгаа</a></li>
                 <li><a href="/make-up.html">Нүүр будалт</a></li>
@@ -13,13 +46,14 @@
                 <li><a href="/sale.html">Хямдралтай</a></li>
                 <li><a href="/delivery2.html">Зөвлөгөө</a></li>
              </ul>
+            </div>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="description" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>LORAINE cosmetic shop</title>
-        <link rel="icon" href="/img/l_logo.png">
         <meta name="author" content="Tom Amjilt XXK">
         <meta name="category" content="beauty,cosmetics,shopping">
-        <meta name="keywords" content="Loraine cosmetics mongolia, Loraine, loraine mongolia, mongol turh, монгол төрх, лорэйн, гоо сайхан, goo saikhan,
-        cosmetics, cosmetic, cosmetic mongolia, skincare, skincare mongolia">
+        <link rel="icon" href="img/l_logo.png">
         <meta property="og:locality" content="Ulaanbaatar">
         <meta property="og:region" content="UB">
         <meta property="og:country_name" content="Mongolia">
@@ -27,40 +61,41 @@
     <body>
         <body>
             <h1>Хүргэлт</h1>
-    
-    <form method="post">
-        <div class="form-row">
-            <div class="col-12 form-group">
-      <p><label> Нэр: <input name="customername" required></label></p>
-      <p><label> Овог: <input name="customerlastname" required></label></p>
-      <p><label> Утасны дугаар: <input name="telephonenumber" required type=tel></label></p>
-      <p><label> Email: <input name="emailaddress" required type=email></label></p>
-      <p><label> Хот/Аймаг: </label></p>
-      <select name="bill_address_attributes.state_id" class="form-control" aria-invalid="false" style="height: 30px;">
-        <option value="2124">Улаанбаатар хот</option>
-        <option value="2123">Архангай аймаг</option>
-        <option value="2122">Баян-Өлгий аймаг</option>
-        <option value="2121">Баянхонгор аймаг</option>
-        <option value="2120">Булган аймаг</option>
-        <option value="2119">Говь-Алтай аймаг</option>
-        <option value="2117">Дорноговь аймаг</option>
-        <option value="2116">Дорнод аймаг</option>
-        <option value="2115">Дундговь аймаг</option>
-        <option value="2114">Завхан аймаг</option>
-        <option value="2113">Өвөрхангай аймаг</option>
-        <option value="2112">Өмнөговь аймаг</option>
-        <option value="2111">Сүхбаатар аймаг</option>
-        <option value="2110">Сэлэнгэ аймаг</option>
-        <option value="2109">Төв аймаг</option>
-        <option value="2108">Увс аймаг</option>
-        <option value="2107">Ховд аймаг</option>
-        <option value="2106">Хөвсгөл аймаг</option>
-        <option value="2105">Хэнтий аймаг</option>
-        <option value="2104">Дархан-Уул аймаг</option>
-        <option value="2103">Орхон аймаг</option>
-        <option value="2118">Говьсүмбэр аймаг</option></select>
-            <p><label>Дүүрэг:</label></p>
-        <select name="bill_address_attributes.state_id" class="form-control" aria-invalid="false" style="height: 30px;">
+        <article class="delivery">
+            <div class="form-row1">
+      <label id="text">Нэр <br><input name="customername" required> <br>
+        <label id="text"> Email <br> <input name="emailaddress" required type=email></label><br>
+        <label id="text"> Хот/Аймаг<br></label>
+        <select name="state_id" class="form-control" aria-invalid="false" style="height: 30px;">
+          <option value="2124">Улаанбаатар хот</option>
+          <option value="2123">Архангай аймаг</option>
+          <option value="2122">Баян-Өлгий аймаг</option>
+          <option value="2121">Баянхонгор аймаг</option>
+          <option value="2120">Булган аймаг</option>
+          <option value="2119">Говь-Алтай аймаг</option>
+          <option value="2117">Дорноговь аймаг</option>
+          <option value="2116">Дорнод аймаг</option>
+          <option value="2115">Дундговь аймаг</option>
+          <option value="2114">Завхан аймаг</option>
+          <option value="2113">Өвөрхангай аймаг</option>
+          <option value="2112">Өмнөговь аймаг</option>
+          <option value="2111">Сүхбаатар аймаг</option>
+          <option value="2110">Сэлэнгэ аймаг</option>
+          <option value="2109">Төв аймаг</option>
+          <option value="2108">Увс аймаг</option>
+          <option value="2107">Ховд аймаг</option>
+          <option value="2106">Хөвсгөл аймаг</option>
+          <option value="2105">Хэнтий аймаг</option>
+          <option value="2104">Дархан-Уул аймаг</option>
+          <option value="2103">Орхон аймаг</option>
+          <option value="2118">Говьсүмбэр аймаг</option></select>
+        </label>
+        </div>
+      <div class="form-row2">
+        <label id="text">Овог<br> <input name="customerlastname" required></label> <br>
+        <label id="text"> Утасны дугаар<br> <input name="telephonenumber" required type=tel></label> <br>
+        <label id="text">Дүүрэг<br></label>
+        <select name="state_id" class="form-control" aria-invalid="false" style="height: 30px;">
                     <option value="21">Баянгол</option>
                     <option value="22">Баянзүрх</option>
                     <option value="23">Багануур</option>
@@ -71,118 +106,57 @@
                     <option value="28">Сүхбаатар</option>
                     <option value="29">Хан-Уул</option>
         </select>
-        <p><label>Дэлгэрэнгүй хаяг: <br> <input name="states" required style="height: 80px; width: 380px"></label></p>
-        <p><button class="black_button" padding="5px">Төлбөр төлөх</button></p>
-      </div>
-      </div>
-      
-    </form>
+    </div>
     <section class="cart-container">
-        <table>
-            <tr>
-                <th>Бүтээгдэхүүн</th>
-                <th>Тоо ширхэг</th>
-                <th>Үнэ</th>
-            </tr>
-            <tr>
-                <td>
-                    <article class="cart-info">
-                        <div>
-                            <p>Сахлын хөөс</p>
-                            <small>Үнэ: 50.000₮</small>
-                            <br>
-                            <small>Үлдэгдэл: 33</small>
-                            <br>
-                            <label>
-                                <button>Устгах</button>
-                            </label>
-                        </div>
-                    </article>
-                </td>
-                <td>
-                    <label>
-                        <input type="number" value="1">
-                    </label>
-                </td>
-                <td>50.000₮</td>
-            </tr>
-                <td>
-                    <article class="cart-info">
-                        <div>
-                            <p>Сахлын хөөс</p>
-                            <small>Үнэ: 56.000₮</small>
-                            <br>
-                            <small>Үлдэгдэл: 3</small>
-                            <br>
-                            <label>
-                                <button>Устгах</button>
-                            </label>
-                        </div>
-                    </article>
-                </td>
-                <td>
-                    <label>
-                        <input type="number" value="1">
-                    </label>
-                </td>
-                <td>56.000₮</td>
-            </tr>
-                <td>
-                    <article class="cart-info">
-                        <div>
-                            <p>Сахлын хөөс</p>
-                            <small>Үнэ: 59.000₮</small>
-                            <br>
-                            <small>Үлдэгдэл: 26</small>
-                            <br>
-                            <label>
-                                <button>Устгах</button>
-                            </label>
-                        </div>
-                    </article>
-                </td>
-                <td>
-                    <label>
-                        <input type="number" value="1">
-                    </label>
-                </td>
-                <td>59.000₮</td>
-            </tr>
-        </table>
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Үнэ</td>
-                    <td>200.000₮</td>
-                </tr>
-                <tr>
-                    <td>Хүргэлт</td>
-                    <td>5.000₮</td>
-                </tr>
-                <tr>
-                    <td>Нийт үнэ</td>
-                    <td>205.000₮</td>
-                </tr>
-            </table>
-        </div>
+        <div class="cart-heading">
+            <h3 class="cart-heading1">Сагс</h3>
+            <h5 class="remove-all">Бүгдийг устгах</h5>
+            </div>
+            <div class="cart-Items">
+                <div class="about">
+                <h1 class="title">Нарны тос</h1>
+                <h3 class="subtitle">#26489635</h3>
+                </div>
+                <div class="counter">
+                    <div class="btn-plus">+</div>
+                    <div class="count">1</div>
+                    <div class="btn-minus">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">35'900₮</div>
+                <div class="remove"><u>Устгах</u></div></div>
+                </div>
+                <hr> 
+                <div class="checkout">
+                <div class="total">
+                <div>
+                <div class="Subtotal">Нийт үнэ</div>
+                <div class="items">1 бараа</div>
+                </div>
+                <div class="total-amount">35'900₮</div>
+                </div>
+                </div>
+                <button class="pay">Төлбөр төлөх</button>
     </section>
-    </body>
-    <footer>
-        <ul class="tuhai">
+</div>
+<label id="text">Дэлгэрэнгүй хаяг: <br><input name="states" required style="height: 140px; width: 700px"></label>
+        </article> </body>
+    <footer class="footer">
+        <ul class="link">
         <li><b>ТАНИЛЦУУЛГА</b></li>
         <li>Бидний тухай</li>
         <li>Тусламж</li>
         <li>Хүргэлтийн нөхцөл</li>
         <li>Буцаалт</li>
-        <img src="/img/l_logo.png" alt="" height="200px" width="200px">
+        <p class="mark" >@2023. Бүх эрх хуулиар хамгаалагдсан.</p>
     </ul>
-    <address>
+    <img src="/img/l_logo.png" alt="">
+    <address class="address">
         <p><b>ХАЯГ</b></p>
         <p>Хан-Уул дүүрэг, 15-р хороо, Махатма Гандигийн гудамж, Наадам центер, 2 давхар, Loraine Cosmetics</p>
         <p><b>ХОЛБОО БАРИХ</b></p>
         <p><a href="tel:+976 75171156">Утас: 75171156</a></p>
         <p><a href="mailto: info@loraine.mn">И-мэйл: info@loraine.mn</a></p>
-        <p>@2023. Бүх эрх хуулиар хамгаалагдсан.</p>
     </address>
     </footer>
     </html>
