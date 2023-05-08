@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head class="head1">
+    <head>
         <div class="pd-wrap"> 
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Discover Loraine's Cosmetics, the online destination for high-quality beauty products. 
         Our wide range of makeup, skincare, and haircare products are made with natural ingredients and designed to enhance your natural beauty. 
         Shop now and enjoy free shipping on orders over $50.">
+        <meta property="og:locality" content="Ulaanbaatar">
+        <meta property="og:country_name" content="Mongolia">
         <link rel="stylesheet" href="product_delivery.css">
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="img/l_logo.png">
+        <title>LORAINE cosmetic shop</title>
+      </head>
         <ul class="social-icon">
             <li>
               <a class="facebook" href="#">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true" aria-label="Read more about facebook"></i>
               </a>
             </li>
             <li>
               <a class="twitter" href="#">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true" aria-label="Read more about twitter"></i>
               </a>
             </li>
             <li>
               <a class="instagram" href="#">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true" aria-label="Read more about instagram"></i>
               </a>
             </li>
           </ul>
         <div class="header_first">
-            <img src="img/l_logo.png" alt="nav_logo" />
+            <img src="img/l_logo.png" alt="nav_logo" width="150px" height="150px"/>
         <div class="search-box">
             <div class="search-container">
-                    <input type="text" name="search" placeholder="Search..." class="search-input">
+                    <input type="text" name="search" placeholder="Search..." class="search-input" aria-label="Search bar">
                     <a href="#" class="search-btn">
                             <i class="fas fa-search"></i>      
                     </a>
                 </div>
                 </div>
                 </div>
+                <svg class="icon" width="500" height="500">
+                <g class="pedals1">
+                  <ellipse cx="96" cy="-44" rx="21" ry="5"/>
+                  <ellipse cx="96" cy="-44" rx="5" ry="21"/>
+                </g>
+                  <g class="pedals2">
+                  <ellipse cx="100" cy="37" rx="21" ry="5"/>
+                  <ellipse cx="100" cy="37" rx="5" ry="21"/>
+                </g> 
+                <g class="circle">
+                <circle cx="80" cy="29" r="1.3"/>
+                <circle cx="118" cy="29" r="1.3"/>
+                <circle cx="108" cy="18" r="1.3"/>
+                <circle cx="91" cy="18" r="1.3"/>
+                <circle cx="80" cy="46" r="1.3"/>
+                <circle cx="108" cy="56" r="1.3"/>
+                <circle cx="118" cy="46" r="1.3"/>
+                <circle cx="91" cy="56" r="1.3"/>
+                </g> 
+                </svg>
         <div class="header_menu">
             <ul class="menu">
                 <li><a href="/skincare.html">Арьс арчилгаа</a></li>
                 <li><a href="/make-up.html">Нүүр будалт</a></li>
                 <li><a href="/help.html">Эрэгтэйчүүдэд</a></li>
-                <li><a href="/sale.html">Хямдралтай</a></li>
+                <li><a class="sale" href="/sale.html">Хямдралтай%</a></li>
                 <li><a href="/delivery2.html">Зөвлөгөө</a></li>
              </ul>
             </div>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta name="description" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <title>LORAINE cosmetic shop</title>
-        <meta name="author" content="Tom Amjilt XXK">
-        <meta name="category" content="beauty,cosmetics,shopping">
-        <link rel="icon" href="img/l_logo.png">
-        <meta property="og:locality" content="Ulaanbaatar">
-        <meta property="og:region" content="UB">
-        <meta property="og:country_name" content="Mongolia">
-    </head>
     <body>
         <body>
             <h1>Хүргэлт</h1>
         <article class="delivery">
             <div class="form-row1">
-      <label id="text">Нэр <br><input name="customername" required> <br>
-        <label id="text"> Email <br> <input name="emailaddress" required type=email></label><br>
+      <label id="text">Нэр <br><input type="text" name="customername" required> <br>
+        <label id="text"> Email <br> <input type="email" name="emailaddress" required type=email></label><br>
         <label id="text"> Хот/Аймаг<br></label>
         <select name="state_id" class="form-control" aria-invalid="false" style="height: 30px;">
+          <option selected="selected">Chosen</option>
+          <option>Not Selected</option>
           <option value="2124">Улаанбаатар хот</option>
           <option value="2123">Архангай аймаг</option>
           <option value="2122">Баян-Өлгий аймаг</option>
@@ -92,11 +109,13 @@
         </label>
         </div>
       <div class="form-row2">
-        <label id="text">Овог<br> <input name="customerlastname" required></label> <br>
-        <label id="text"> Утасны дугаар<br> <input name="telephonenumber" required type=tel></label> <br>
+        <label id="text">Овог<br> <input type="text" name="customerlastname" required></label> <br>
+        <label id="text">Утасны дугаар<br> <input type="tel" name="telephonenumber" required></label> <br>
         <label id="text">Дүүрэг<br></label>
         <select name="state_id" class="form-control" aria-invalid="false" style="height: 30px;">
-                    <option value="21">Баянгол</option>
+          <option selected="selected">Chosen</option>
+          <option>Not Selected</option>
+          <option value="21">Баянгол</option>
                     <option value="22">Баянзүрх</option>
                     <option value="23">Багануур</option>
                     <option value="24">Багахангай</option>
@@ -110,12 +129,12 @@
     <section class="cart-container">
         <div class="cart-heading">
             <h3 class="cart-heading1">Сагс</h3>
-            <h5 class="remove-all">Бүгдийг устгах</h5>
+            <h4 class="remove-all">Бүгдийг устгах</h4>
             </div>
             <div class="cart-Items">
                 <div class="about">
                 <h1 class="title">Нарны тос</h1>
-                <h3 class="subtitle">#26489635</h3>
+                <h4 class="subtitle">#26489635</h4>
                 </div>
                 <div class="counter">
                     <div class="btn-plus">+</div>
