@@ -340,7 +340,6 @@ html {
     width: 100%;
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    justify-content: bottom;
     cursor: pointer;
     font-size: 14px;
     background-color: #ffffff;
@@ -360,7 +359,7 @@ html {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: 0;
+    scrollbar-width: 0px;
   }
   .carousel::-webkit-scrollbar {
     display: none;
@@ -405,7 +404,7 @@ html {
 }
 @media screen and (max-width: 900px) {
   .wrapper .carousel, .wrap .box{
-    grid-auto-columns: calc((100%/2)-9px);
+    grid-auto-columns: calc((100%/2));
   }
 }
 @media screen and (max-width: 600px) {
@@ -437,7 +436,7 @@ html {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: 0;
+    scrollbar-width: 0px;
 }
 .box .box-top {
   scroll-snap-align: start;
