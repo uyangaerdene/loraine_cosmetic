@@ -1,0 +1,229 @@
+
+{ "products" : [
+    {
+      "brand": "kanebo",
+      "class": "prod-box dry",
+      "imgSrc": "img/pro6.jpg",
+      "name": "PROPOLIS SYNERGY TONER",
+      "type": "Тонер",
+      "price": "45,000₮"
+    },
+    {
+      "brand": "innisfree",
+      "class": "prod-box oily",
+      "imgSrc": "img/kinfield3.jpg",
+      "name": "KINFIELD SUNDAY SPRAY",
+        "type": "Нарны-цацлага",
+        "price": "35,000₮"
+      },
+      {
+        "brand": "loreal",
+        "class": "prod-box sensitive",
+        "imgSrc": "img/pro8.jpg",
+        "name": "PINK CLOUD",
+        "type": "Чийгшүүлэх-тос",
+        "price": "58,000₮"
+      },
+      {
+        "brand": "cosrx",
+        "class": "prod-box oily",
+        "imgSrc": "img/pro19.jpg",
+        "name": "JEJU CHERRY BLOSSOM CREAM",
+        "type": "Чийгшүүлэх тос",
+        "price": "54,000₮"
+      },
+      {
+        "brand": "shiseido",
+        "class": "prod-box dry",
+        "imgSrc": "img/pro19.jpg",
+        "name": "JEJU CHERRY BLOSSOM CREAM",
+        "type": "Чийгшүүлэх тос",
+        "price": "54,000₮"
+      },
+      {
+        "brand": "shiseido",
+        "class": "prod-box sensitive",
+        "imgSrc": "img/pro16.jpg",
+        "name": "LANEIGE WHITE DEW",
+        "type": "Эмульс",
+        "price": "36,000₮"
+      },
+      {
+        "brand": "loccitane",
+        "class": "prod-box oily",
+        "imgSrc": "img/pro6.jpg",
+        "name": "PROPOLIS SYNERGY TONER",
+        "type": "Тонер",
+        "price": "45,000₮"
+      },
+      {
+        "brand": "kanebo",
+        "class": "prod-box oily",
+        "imgSrc": "img/pro6.jpg",
+        "name": "PROPOLIS SYNERGY TONER",
+        "type": "Тонер",
+        "price": "45,000₮"
+      },
+      {
+        "brand": "innisfree",
+        "class": "prod-box combination",
+        "imgSrc": "img/kinfield3.jpg",
+        "name": "KINFIELD SUNDAY SPRAY",
+          "type": "Нарны цацлага",
+          "price": "35,000₮"
+        },
+        {
+          "brand": "loreal",
+          "class": "prod-box combination",
+          "imgSrc": "img/pro8.jpg",
+          "name": "PINK CLOUD",
+          "type": "Чийгшүүлэх тос",
+          "price": "58,000₮"
+        },
+        {
+          "brand": "shiseido",
+          "class": "prod-box oily",
+          "imgSrc": "img/pro19.jpg",
+          "name": "JEJU CHERRY BLOSSOM CREAM",
+          "type": "Чийгшүүлэх тос",
+          "price": "54,000₮"
+        },
+        {
+          "brand": "etude-house",
+          "class": "prod-box combination",
+          "imgSrc": "img/pro19.jpg",
+          "name": "JEJU CHERRY BLOSSOM CREAM",
+          "type": "Чийгшүүлэх тос",
+          "price": "54,000₮"
+        },
+        {
+          "brand": "cosrx",
+          "class": "prod-box dry",
+          "imgSrc": "img/pro16.jpg",
+          "name": "LANEIGE WHITE DEW",
+          "type": "Эмульс",
+          "price": "36,000₮"
+        },
+        {
+          "brand": "loccitane",
+          "class": "prod-box sensitive",
+          "imgSrc": "img/pro6.jpg",
+          "name": "PROPOLIS SYNERGY TONER",
+          "type": "Тонер",
+          "price": "45,000₮"
+        },
+        {
+          "brand": "kanebo",
+          "class": "prod-box sensitive",
+          "imgSrc": "img/pro6.jpg",
+          "name": "PROPOLIS SYNERGY TONER",
+          "type": "Тонер",
+          "price": "45,000₮"
+          },
+          {
+            "brand": "innisfree",
+            "class": "prod-box combination",
+            "imgSrc": "img/kinfield3.jpg",
+            "name": "KINFIELD SUNDAY SPRAY",
+              "type": "Нарны цацлага",
+              "price": "35,000₮"
+            },
+            {
+              "brand": "loreal",
+              "class": "prod-box oily",
+              "imgSrc": "img/pro8.jpg",
+              "name": "PINK CLOUD",
+              "type": "Чийгшүүлэх тос",
+              "price": "58,000₮"
+            },
+            {
+              "brand": "cosrx",
+              "class": "prod-box combination",
+              "imgSrc": "img/pro19.jpg",
+              "name": "JEJU CHERRY BLOSSOM CREAM",
+              "type": "Чийгшүүлэх тос",
+              "price": "54,000₮"
+            },
+            {
+              "brand": "innisfree",
+              "class": "prod-box oily",
+              "imgSrc": "img/pro19.jpg",
+              "name": "JEJU CHERRY BLOSSOM CREAM",
+              "type": "Чийгшүүлэх тос",
+              "price": "54,000₮"
+            },
+            {
+              "brand": "innisfree",
+              "class": "prod-box oily",
+              "imgSrc": "img/pro16.jpg",
+              "name": "LANEIGE WHITE DEW",
+              "type": "Эмульс",
+              "price": "36,000₮"
+            },
+            {
+              "brand": "loccitane",
+              "class": "prod-box sensitive",
+              "imgSrc": "img/pro6.jpg",
+              "name": "PROPOLIS SYNERGY TONER",
+              "type": "Тонер",
+              "price": "45,000₮"
+            },
+            {
+              "brand": "kanebo",
+              "class": "prod-box oily",
+              "imgSrc": "img/pro6.jpg",
+              "name": "PROPOLIS SYNERGY TONER",
+                "type": "Тонер",
+                "price": "45,000₮"
+              },
+              {
+                "brand": "etude-house",
+                "class": "prod-box combination",
+                "imgSrc": "img/kinfield3.jpg",
+                " name": "KINFIELD SUNDAY SPRAY",
+                  " type": "Нарны цацлага",
+                  "price": "35,000₮"
+                },
+                {
+                  "brand": "loreal",
+                  "class": "prod-box combination",
+                  "imgSrc": "img/pro8.jpg",
+                  "name": "PINK CLOUD",
+                  "type": "Чийгшүүлэх тос",
+                  "price": "58,000₮"
+                },
+                {
+                  "brand": "loreal",
+                  "class": "prod-box oily",
+                  "imgSrc": "img/pro19.jpg",
+                  "name": "JEJU CHERRY BLOSSOM CREAM",
+                  "type": "Чийгшүүлэх тос",
+                  "price": "54,000₮"
+                },
+                {
+                  "brand": "etude-house",
+                  "class": "prod-box dry",
+                  "imgSrc": "img/pro19.jpg",
+                  "name": "JEJU CHERRY BLOSSOM CREAM",
+                  "type": "Чийгшүүлэх тос",
+                  "price": "54,000₮"
+                },
+                {
+                  "brand": "loreal",
+                  "class": "prod-box sensitive",
+                  "imgSrc": "img/pro16.jpg",
+                  "name": "LANEIGE WHITE DEW",
+                  "type": "Эмульс",
+                  "price": "36,000₮"
+                },
+                {
+                  "brand": "loccitane",
+        "class": "prod-box oily",
+        "imgSrc": "img/pro6.jpg",
+                  "name": "PROPOLIS SYNERGY TONER",
+                  "type": "Тонер",
+                  "price": "45,000₮"
+                }
+  ]}
+
+

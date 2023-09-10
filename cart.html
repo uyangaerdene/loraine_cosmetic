@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="width=device-width, initial-scale=1.0">
-<title>Beauty</title>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Best cosmetics">
+        <meta name="description" content="Discover Loraine's Cosmetics, the online destination for high-quality beauty products. 
+        Our wide range of makeup, skincare, and haircare products are made with natural ingredients and designed to enhance your natural beauty. 
+        Shop now and enjoy free shipping on orders over $50.">
+        <meta property="og:locality" content="Ulaanbaatar">
+        <meta property="og:country_name" content="Mongolia">
+        <link rel="stylesheet" href="skincare.css">
+        <script src="home.js" defer></script>
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Loreine cosmetics</title>
 </head>
 <body>
-
-<header>
-    <head>
-        <img src="img/l_logo.png" height="200px" width="200px" alt="logo">
-    </head>
-    <ul class="menu">
-        <li><a href="skincare.html">Арьс арчилгаа</a></li>
-        <li><a href="make-up.html">Нүүр будалт</a></li>
-        <li><a href="help.html">Эрэгтэйчүүдэд</a></li>
-        <li><a href="sale.html">Хямдралтай</a></li>
-        <li><a href="delivery2.html">Зөвлөгөө</a></li>
-     </ul>
-</header>
-<section class="cart-container">
-    <table>
+    <ul class="social-icon">
+        <li>
+          <a class="facebook" href="#">
+            <i class="fa fa-facebook" aria-hidden="true" aria-label="Read more about facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#">
+            <i class="fa fa-twitter" aria-hidden="true" aria-label="Read more about twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <i class="fa fa-instagram" aria-hidden="true" aria-label="Read more about instagram"></i>
+          </a>
+        </li>
+      </ul>
+    <div class="header_first">
+        <img src="img/l_logo.png" alt="nav_logo" width="150px" height="150px"/>
+    <div class="search-box">
+        <div class="search-container">
+                <input type="text" name="search" placeholder="Search..." class="search-input" aria-label="Search bar">
+                <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>      
+                </a>
+            </div>
+            </div>
+            </div>
+            <div class="header_menu">
+                <ul class="menu">
+                    <li><a href="/skincare.html">Арьс арчилгаа</a></li>
+                    <li><a href="/make-up.html">Нүүр будалт</a></li>
+                    <li><a href="/help.html">Эрэгтэйчүүдэд</a></li>
+                    <li><a class="sale" href="/sale.html">Хямдралтай%</a></li>
+                    <li><a href="/zovlogoo.html">Зөвлөгөө</a></li>
+                 </ul>
+                </div>
+                <!--cart items details-->
+<section class="small-container cart-page">
+    <table class="cart-table">
         <tr>
             <th>Бүтээгдэхүүн</th>
             <th>Тоо ширхэг</th>
@@ -30,84 +67,55 @@
         </tr>
         <tr>
             <td>
-                <article class="cart-info">
-                    <div>
-                        <p>Сахлын хөөс</p>
-                        <small>Үнэ: 50.000₮</small>
-                        <br>
-                        <small>Үлдэгдэл: 33</small>
-                        <br>
-                        <label>
-                            <button>Устгах</button>
-                        </label>
-                    </div>
-                </article>
-            </td>
-            <td>
-                <label>
-                    <input type="number" value="1">
-                </label>
-            </td>
-            <td>50.000₮</td>
-        </tr>
-            <td>
-                <article class="cart-info">
-                    <div>
-                        <p>Сахлын хөөс</p>
-                        <small>Үнэ: 56.000₮</small>
-                        <br>
-                        <small>Үлдэгдэл: 3</small>
-                        <br>
-                        <label>
-                            <button>Устгах</button>
-                        </label>
-                    </div>
-                </article>
-            </td>
-            <td>
-                <label>
-                    <input type="number" value="1">
-                </label>
-            </td>
-            <td>56.000₮</td>
-        </tr>
-            <td>
-                <article class="cart-info">
-                    <div>
-                        <p>Сахлын хөөс</p>
-                        <small>Үнэ: 59.000₮</small>
-                        <br>
-                        <small>Үлдэгдэл: 26</small>
-                        <br>
-                        <label>
-                            <button>Устгах</button>
-                        </label>
-                    </div>
-                </article>
-            </td>
-            <td>
-                <label>
-                    <input type="number" value="1">
-                </label>
-            </td>
-            <td>59.000₮</td>
-        </tr>
-    </table>
-    <div class="total-price">
-        <table>
-            <tr>
-                <td>Үнэ</td>
-                <td>200.000₮</td>
+                <div class="cart-info">
+                    <img src="img/kinfield1.jpg">
+                <div>
+                <p>KINFIELD SUNDAY SPRAY</p>
+                <small>Үнэ: 45'000₮</small>
+                <a href="">Устгах</a>
+                </div>
+                </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>45'000₮</td>
             </tr>
             <tr>
-                <td>Хүргэлт</td>
-                <td>5.000₮</td>
-            </tr>
-            <tr>
-                <td>Нийт үнэ</td>
-                <td>205.000₮</td>
-            </tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/pro6.jpg">
+                    <div>
+                    <p>PROPOLIS SYNERGY TONER</p>
+                    <small>Үнэ: 45'000₮</small>
+                    <a href="">Устгах</a>
+                    </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>45'000₮</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/pro16.jpg">
+                        <div>
+                        <p>LANEIGE WHITE DEW</p>
+                        <small>Үнэ: 36'000₮</small>
+                        <a href="">Устгах</a>
+                        </div>
+                        </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>45'000₮</td>
+                    </tr>
         </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Нийт үнэ</td>
+                    <td>126'000₮</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </section>
 <section class="cart-description">
@@ -123,22 +131,22 @@
     </button>
 </label>
 </body>
-<footer>
-    <ul>
+<footer class="footer">
+    <ul class="link">
     <li><b>ТАНИЛЦУУЛГА</b></li>
     <li>Бидний тухай</li>
     <li>Тусламж</li>
     <li>Хүргэлтийн нөхцөл</li>
     <li>Буцаалт</li>
-    <img src="img/l_logo.png" alt="">
+    <p class="mark" >@2023. Бүх эрх хуулиар хамгаалагдсан.</p>
 </ul>
-<address>
+<img src="img/l_logo.png" alt="">
+<address class="address">
     <p><b>ХАЯГ</b></p>
     <p>Хан-Уул дүүрэг, 15-р хороо, Махатма Гандигийн гудамж, Наадам центер, 2 давхар, Loraine Cosmetics</p>
     <p><b>ХОЛБОО БАРИХ</b></p>
     <p><a href="tel:+976 75171156">Утас: 75171156</a></p>
     <p><a href="mailto: info@loraine.mn">И-мэйл: info@loraine.mn</a></p>
-    <p>@2023. Бүх эрх хуулиар хамгаалагдсан.</p>
 </address>
 </footer>
 </html>

@@ -7,67 +7,162 @@
     <meta 
     name="description"
     content="Best cosmetics">
+    <meta name="description" content="Discover Loraine's Cosmetics, the online destination for high-quality beauty products. 
+    Our wide range of makeup, skincare, and haircare products are made with natural ingredients and designed to enhance your natural beauty. 
+    Shop now and enjoy free shipping on orders over $50.">
+    <meta property="og:locality" content="Ulaanbaatar">
+    <meta property="og:country_name" content="Mongolia">
+    <link rel="stylesheet" href="skincare.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Арьс арчилгаа</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="logo"><img src="img/l_logo.png" height="200px" width="200px" alt=""></div>
-            <ul>
-                <li><a href="skincare.html" aria-label="Read more...">Арьс арчилгаа</a></li>
-                <li><a href="make-up.html" aria-label="Read more...">Нүүр будалт</a></li>
-                <li><a href="second.html" aria-label="Read more...">Эрэгтэйчүүдэд</a></li>
-                <li><a href="sale.html" aria-label="Read more...">Хямдралтай</a></li>                
-                <li><a href="second.html" aria-label="Read more...">Зөвлөгөө</a></li>                
-            </ul>
-        </nav>
-    </header>
-    <section id="angilal">
-        <h3>Арьс арчилгаа>Ангилал</h3>
-        <div class="box-4">
-            <h4><img src="img/skincare1.png" alt="">Хуурай</h4>
-            <h4><img src="img/skincare2.png" alt="">Тослог</h4>
-            <h4><img src="img/skincare3.png" alt="">Холимог</h4>
-            <h4><img src="img/skincare4.png" alt="">Эмзэг</h4>
-        </div>
-    </section>
-    <section id="brands">
-        <h3>Брендүүд: </h3>
-        <div class="brand-box">
-            <img src="img/brand-1.png" alt="">
-            <img src="img/brand-2.png" alt="">
-            <img src="img/brand-3.png" alt="">
-            <img src="img/brand-4.jpg" alt="">
-            <img src="img/brand-5.png" alt="">
-            <img src="img/brand-6.png" alt="">
-            <img src="img/brand-7.png" alt="">
-        </div>
-    </section>
-    <section>
-        <h3>Бүх бүтээгдэхүүн</h3>
-    <script src="skincare.js"></script>
-    <div class="products">
-        
-    </div>
-    </section>
-    <a href="home.html">Бүгдийг үзэх</a>
-    </body>
-    <footer>
-        <ul>
-        <li><b>ТАНИЛЦУУЛГА</b></li>
-        <li>Бидний тухай</li>
-        <li>Тусламж</li>
-        <li>Хүргэлтийн нөхцөл</li>
-        <li>Буцаалт</li>
-        <img src="img/l_logo.png" alt="">
+     <!--Social icon-->
+     <ul class="social-icon">
+      <li>
+        <a class="facebook" href="https://www.facebook.com/" aria-label="Facebook">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter" href="https://www.twitter.com/" aria-label="Twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a class="instagram" href="https://www.instagram.com/" aria-label="Instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
     </ul>
-    <address>
-        <p><b>ХАЯГ</b></p>
-        <p>Хан-Уул дүүрэг, 15-р хороо, Махатма Гандигийн гудамж, Наадам центер, 2 давхар, Loraine Cosmetics</p>
-        <p><b>ХОЛБОО БАРИХ</b></p>
-        <p><a href="tel:+976 75171156">Утас: 75171156</a></p>
-        <p><a href="mailto: info@loraine.mn">И-мэйл: info@loraine.mn</a></p>
-        <p>@2023. Бүх эрх хуулиар хамгаалагдсан.</p>
-    </address>
-    </footer>
+    <div class="header_first">
+        <img src="img/l_logo.png" alt="nav_logo" width="150px" height="150px"/>
+    <div class="search-box">
+        <div class="search-container">
+                <input type="text" name="search" placeholder="Search..." class="search-input" aria-label="Search bar">
+                <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>      
+                </a>
+            </div>
+            </div>
+                     
+            <!--shopping cart icon-->
+            <div class="shopping-cart">
+              <i class="fas fa-shopping-cart shoppingCartButton"></i>
+          </div>
+      </div>
+          <div class="producstOnCart hide">
+              <div class="overlay"></div>
+              <div class="top">
+                  <button id="closeButton">
+                      <i class="fas fa-times-circle"></i>
+                  </button>
+                  <h3>Cart</h3>
+              </div>
+              <ul id="buyItems">
+                  <!--Cart items-->
+              </ul>
+              <h6 id="sum-prices"></h6>
+              <button class="buy">Худалдан авах</button>
+          </div>
+          </div>
+          <script>
+              // Function to open the cart
+function openCart() {
+  const cart = document.querySelector('.producstOnCart');
+  cart.classList.remove('hide');
+  document.querySelector('body').classList.add('stopScrolling');
+}
+
+// Function to close the cart
+function closeCart() {
+  const cart = document.querySelector('.producstOnCart');
+  cart.classList.add('hide');
+  document.querySelector('body').classList.remove('stopScrolling');
+}
+
+const openShopCart = document.querySelector('.shoppingCartButton');
+openShopCart.addEventListener('click', openCart);
+
+const closeShopCart = document.querySelector('#closeButton');
+const overlay = document.querySelector('.overlay');
+
+closeShopCart.addEventListener('click', closeCart);
+overlay.addEventListener('click', closeCart);
+
+          </script>
+
+          <!--top nav-->
+          <div class="header_menu">
+              <ul class="menu">
+                  <li><a href="/skincare.html">Арьс арчилгаа</a></li>
+                  <li><a href="/make-up.html">Нүүр будалт</a></li>
+                  <li><a href="/man.html">Эрэгтэйчүүдэд</a></li>
+                  <li><a href="/sale.html" class="sale">Хямдралтай%</a></li>
+                  <li><a href="/zovlogoo.html">Зөвлөгөө</a></li>
+              </ul>          
+              </div> 
+    <!--breadcrumbs-->
+    <section id="angilal">
+      <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="/home.html" class="breadcrumbs__link">Нүүр</a>
+          </li>
+          <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link breadcrumbs__link--active">Арьс арчилгаа<a>
+          </li>
+      </ul>
+      <!--skin type filter btn-->
+  <div class="box-4">
+    <li class="filter-btn"><div data-filter="dry"><img src="img/skincare1.png" alt=""></br><h3>Хуурай</h3></div></li>
+    <li class="filter-btn"><div data-filter="oily"><img src="img/skincare2.png" alt=""></br><h3>Тослог</h3></div></li>
+    <li class="filter-btn"><div data-filter="combination"><img src="img/skincare3.png" alt=""></br><h3>Холимог</h3></div></li>
+    <li class="filter-btn"><div data-filter="sensitive"><img src="img/skincare4.png" alt=""></br><h3>Эмзэг</h3></div></li>
+</div>
+    </section>
+    <!--brand filter btn-->
+    <section class="brand-list" id="wrapper">
+        <div class="brands">
+            <h3>Брендүүд: </h3>
+            <ul class="br-items">
+              <li><div class="brand-filter" data-brand="shiseido"><img src="img/brand-1.png" alt="shiseido"></div></li>
+              <li><div class="brand-filter" data-brand="loreal"><img src="img/brand-2.png" alt="loreal"></div></li>
+              <li><div class="brand-filter" data-brand="cosrx"><img src="img/brand-3.png" alt="cosrx"></div></li>
+              <li><div class="brand-filter" data-brand="loccitane"><img src="img/brand-4.jpg" alt="loccitane"></div></li>
+              <li><div class="brand-filter" data-brand="etude-house"><img src="img/brand-5.png" alt="etude-house"></div></li>
+              <li><div class="brand-filter" data-brand="innisfree"><img src="img/brand-6.png" alt="innisfree"></div></li>
+              <li><div class="brand-filter" data-brand="kanebo"><img src="img/brand-7.png" alt="kanebo"></div></li>
+          </ul>
+        </div>
+    </section></br>
+    <section class="product-list">
+      <!--Products here-->
+      <script src="product-skincare.js"></script>
+      </section>
+      <div class="load-more">Бүгдийг үзэх</div>
+<script src="load-more.js"></script>
+<!--filter js-->
+  <script src="filter.js"></script>
+  <script src="filter-brands.js"></script>
+  <script src="shopping-cart.js"></script>
+  </section>
+    </body>
+    <footer class="footer"><ul class="link">
+      <li><a href="introduction.html" type="button"><b>ТАНИЛЦУУЛГА</b></a></li>
+      <li>Бидний тухай</li>
+      <li>Хүргэлтийн нөхцөл</li>
+      <li>Буцаалт</li>
+      <p class="mark" >@2023. Бүх эрх хуулиар хамгаалагдсан.</p>
+  </ul>
+  <img src="img/l_logo.png" alt="">
+  <address class="address">
+      <p><b>ХАЯГ</b></p>
+      <p>Хан-Уул дүүрэг, 15-р хороо, Махатма Гандигийн гудамж, Наадам центер, 2 давхар, Loraine Cosmetics</p>
+      <p><b>ХОЛБОО БАРИХ</b></p>
+      <p><a href="tel:+976 75171156">Утас: 75171156</a></p>
+      <p><a href="mailto: info@loraine.mn">И-мэйл: info@loraine.mn</a></p>
+  </address>
+  </footer>
 </html>
