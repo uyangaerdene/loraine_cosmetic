@@ -269,8 +269,8 @@ html {
     margin: 10px;
   }
   .box-4 img {
-    width: 80% ;
-    height: 80%;
+    width: 80%;
+    height: 300px;
     border-radius: 50px;
     position: relative;
   }
@@ -359,7 +359,6 @@ html {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: 0px;
   }
   .carousel::-webkit-scrollbar {
     display: none;
@@ -436,7 +435,6 @@ html {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: 0px;
 }
 .box .box-top {
   scroll-snap-align: start;

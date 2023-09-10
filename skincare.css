@@ -250,7 +250,7 @@ margin-top: 35%;
 }
 /*products in cart*/
 .producstOnCart {
-    -ms-overflow-style: none;
+    -ms-style: none;
     scrollbar-width: none;
     overflow: hidden;
     overflow-y: scroll;
@@ -600,7 +600,7 @@ margin-top: 35%;
 .blog-text p {
   color: #9b9b9b;
   font-size: 0.9rem;
-  display: -webkit-box;
+  display: box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
