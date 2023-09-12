@@ -32,7 +32,7 @@ const totalPriceElement = document.querySelector("#sum-prices");
 
 if (cartList.children.length === 0) {
   emptyCartMessage.style.display = "block";
-  totalPriceElement.textContent = "";
+  totalPriceElement.textContent = "Нийт: 0₮";
 } else {
   emptyCartMessage.style.display = "none";
   checkoutButton.classList.remove("hidden");

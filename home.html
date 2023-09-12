@@ -4,9 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta 
-        name="description"
-        content="Best cosmetics">
         <meta name="description" content="Discover Loraine's Cosmetics, the online destination for high-quality beauty products. 
         Our wide range of makeup, skincare, and haircare products are made with natural ingredients and designed to enhance your natural beauty. 
         Shop now and enjoy free shipping on orders over $50.">
@@ -43,7 +40,7 @@
     <div class="search-box">
         <div class="search-container">
                 <input type="text" name="search" placeholder="Search..." class="search-input" aria-label="Search bar">
-                <a href="#" class="search-btn">
+                <a href="#" aria-label="search" class="search-btn">
                         <i class="fas fa-search"></i>      
                 </a>
             </div>
@@ -53,11 +50,11 @@
             <!--top nav-->
             <div class="header_menu">
                 <ul class="menu">
-                    <li><a href="/skincare.html">Арьс арчилгаа</a></li>
-                    <li><a href="/make-up.html">Нүүр будалт</a></li>
-                    <li><a href="/man.html">Эрэгтэйчүүдэд</a></li>
-                    <li><a href="/sale.html" class="sale">Хямдралтай%</a></li>
-                    <li><a href="/zovlogoo.html">Зөвлөгөө</a></li>
+                    <li><a href="/skincare.html" aria-label="skin">Арьс арчилгаа</a></li>
+                    <li><a href="/make-up.html" aria-label="makeup">Нүүр будалт</a></li>
+                    <li><a href="/man.html" aria-label="man">Эрэгтэйчүүдэд</a></li>
+                    <li><a href="/sale.html" aria-label="sale" class="sale">Хямдралтай%</a></li>
+                    <li><a href="/zovlogoo.html" aria-label="zuvluguu">Зөвлөгөө</a></li>
                 </ul>   
                 </div>
                 <div class="slideshow-container">
@@ -75,8 +72,8 @@
                     </div>
                   
                     <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" aria-label="arrow" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" aria-label="arrow" onclick="plusSlides(1)">&#10095;</a>
                   </div>
                   <br>
                   
@@ -88,27 +85,27 @@
                   </div>
     <h2 class="this">энэ долоо хоногт</h2>
     <div class="thisweek">
-        <li><img src="img/ene7.1" alt=""><h2>Шинэ бүтээгдэхүүн</h2><button href="">Дэлгэрэнгүй</button></li>
+        <li><img src="img/ene7.jpg" style="width: 455px; height: 710px" alt=""><h2>Шинэ бүтээгдэхүүн</h2><button href="">Дэлгэрэнгүй</button></li>
         <li><img src="img/ene7.2.png" alt=""><h2>Хямдралтай бүтээгдэхүүн</h2><button type="button" onclick="location.href='/sale.html'" style="cursor: pointer;">Дэлгэрэнгүй</button></li>
-        <li><img src="img/ene7.3.png" alt=""><h2>Bestseller</h2><button href="">Дэлгэрэнгүй</button></li>
+        <li><img src="img/ene7.3.png" style="width: 455px; height: 690px" alt=""><h2>Bestseller</h2><button href="">Дэлгэрэнгүй</button></li>
     </div>
 </section>
 <section>
 <h2>Арьс арчилгаа</h2>
         <div class="skincare">
-            <li class="filter-btn"><div data-filter="dry"><img src="img/skincare1.png" alt=""><a href="skincare.html"id="dry-button"><h3>Хуурай</h3></a></div></li>
-        <li class="filter-btn"><div data-filter="oily"><img src="img/skincare2.png" alt=""><a href="skincare.html"><h3>Тослог</h3></a></div></li>
-        <li class="filter-btn"><div data-filter="combination"><img src="img/skincare3.png" alt=""><a href="skincare.html"><h3>Холимог</h3></a></div></li>
-        <li class="filter-btn"><div data-filter="sensitive"><img src="img/skincare4.png" alt=""><a href="skincare.html"><h3>Эмзэг</h3></a></div></li>
+            <li class="filter-btn"><div data-filter="dry"><img src="img/skincare1.png" alt=""><a href="skincare.html"id="dry-button" aria-label="dry"><h3>Хуурай</h3></a></div></li>
+        <li class="filter-btn"><div data-filter="oily"><img src="img/skincare2.png" style="width: 240px; height: 300px" alt="" aria-label="oily"><a href="skincare.html"><h3>Тослог</h3></a></div></li>
+        <li class="filter-btn"><div data-filter="combination"><img src="img/skincare3.png" alt=""><a href="skincare.html" aria-label="comb"><h3>Холимог</h3></a></div></li>
+        <li class="filter-btn"><div data-filter="sensitive"><img src="img/skincare4.png" style="width: 240px; height: 300px" alt="" aria-label="sens"><a href="skincare.html"><h3>Эмзэг</h3></a></div></li>
 </div>
     </section>
 <section>
     <h2>Нүүр будалт</h2>
     <div class="box-4">
-        <li class="filter-btn"><div data-filter="base"><img src="img/suuri.png" alt=""><a href="make-up.html"><h3>Суурь</h3></a></div></li>
-        <li class="filter-btn"><div data-filter="cream"><img src="img/foundation.png" alt=""><a href="make-up.html"><h3>Крем</h3></a></div></li>
-        <li class="filter-btn"><div data-filter="powder"><img src="img/powder.png" alt=""><a href="make-up.html"><h3>Пудр</h3></a></div></li>
-        <li class="filter-btn"><div data-filter="contour"><img src="img/gerelsuuder.png" alt=""><a href="make-up.html"><h3>Гэрэл сүүдэр</h3></a></div></li>
+        <li class="filter-btn"><div class="box-5" data-filter="base"><img src="img/suuri.png" alt=""><a href="make-up.html" aria-label="base"><h3>Суурь</h3></a></div></li>
+        <li class="filter-btn"><div class="box-5" data-filter="cream"><img src="img/foundation.png" alt=""><a href="make-up.html" aria-label="mk"><h3>Крем</h3></a></div></li>
+        <li class="filter-btn"><div class="box-5" data-filter="powder"><img src="img/powder.png" alt="" style="width: 190px; height: 300px"><a href="make-up.html" aria-label="powder"><h3>Пудр</h3></a></div></li>
+        <li class="filter-btn"><div class="box-5" data-filter="contour"><img src="img/gerelsuuder.png" alt=""><a href="make-up.html" aria-label="contour"><h3>Гэрэл сүүдэр</h3></a></div></li>
 </div>
 </section>
 <section>
@@ -117,84 +114,84 @@
         <i id="left" class="fa fa-solid fa-angle-left"></i>
         <ul class="carousel">
         <li class="card">
-            <a href="man.html"><img src="img/men1.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men1.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
         <li class="card">
-            <a href="man.html"><img src="img/men2.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men2.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
         <li class="card">
-            <a href="man.html"><img src="img/men3.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men3.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
         <li class="card">
-            <a href="man.html"><img src="img/men2.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men2.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
         <li class="card">
-            <a href="man.html"><img src="img/men4.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men4.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
         <li class="card">
-            <a href="man.html"><img src="img/men3.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men3.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
             <li class="card">
-                <a href="man.html"><img src="img/men1.jpg" alt=""></a>
+                <a href="man.html" aria-label="men"><img src="img/men1.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
             </li>
         <li class="card">
-            <a href="man.html"><img src="img/men5.jpg" alt=""></a>
+            <a href="man.html" aria-label="men"><img src="img/men5.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
             <li class="card">
-                <a href="man.html"><img src="img/men6.jpg" alt=""></a>
+                <a href="man.html" aria-label="men"><img src="img/men6.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
             <li class="card">
-                <a href="man.html"><img src="img/men7.jpg" alt=""></a>
+                <a href="man.html" aria-label="men"><img src="img/men7.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
         </li>
             <li class="card">
-                <a href="man.html"><img src="img/men8.jpg" alt=""></a>
+                <a href="man.html" aria-label="men"><img src="img/men8.jpg" alt=""></a>
             <h4>FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>
             <button class="add-cart">Сагсанд нэмэх</button>
             </li>
             <li class="card">
-                <a href="man.html"><img src="img/men5.jpg" alt=""></a>
+                <a href="man.html" aria-label="men"><img src="img/men5.jpg" alt=""></a>
             <h4 class="cart-product-title">FOREST REFILL</h4>
             <p class="prod-detail">Эрэгтэй арьс арчилгаа</p>
             <p class="prod-price">105,000₮</p>

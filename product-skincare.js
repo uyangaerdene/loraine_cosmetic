@@ -234,6 +234,7 @@ function createProductElement(product) {
 
   const anchor = document.createElement("a");
   anchor.href = "/product_detail.html"; 
+  anchor.setAttribute("aria-label", "detail");
 
   const img = document.createElement("img");
   img.src = product.imgSrc;

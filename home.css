@@ -115,7 +115,7 @@ html {
     height: 76px;
     top: 0px;
     background-color: #fff;
-    color:#000;
+    color:#3B3B3B;
   }
   .menu li {
     position: relative;
@@ -129,7 +129,7 @@ html {
     padding-top: 12px;
   }
   .sale {
-    color:#e74040;
+    color:#B30000;
   }
   .menu {
     margin: 0;
@@ -149,8 +149,9 @@ html {
   }
   .slideshow-container {
     max-width: 1900px;
-    height: 500px;
+    max-height: 550px;
     position: relative;
+    overflow: hidden;
   }
   
   /* Next & previous buttons */
@@ -175,7 +176,7 @@ html {
     border-radius: 3px 0 0 3px;
   }
   .mySlides img {
-    height: 550px;
+    height: 587.6px;
   }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
@@ -210,13 +211,16 @@ html {
     display: flex;
     position: relative;
     text-align: center;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
   }
   .this {
     margin: 30px;
   }
   .thisweek img {
-    width: 100%;
-    height: 700px;
+    width: 455px;
+    height: 650px;
   }
   .thisweek h2 {
     position: absolute;
@@ -238,43 +242,19 @@ html {
     justify-content: flex-end;
     align-items: center;
   }
-  .makeup, .skincare {
-    display: flex;
-    margin-left: 5%;
-  }
-  .skincare img, .makeup img {
-    height: 300px;
-    border-radius: 50px;
-    margin: 0px 20px 0px 20px;
-  }
-  .makeup li, .skincare li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .makeup h3, .skincare h3 {
-    color: white;
-    margin-left: 10%;
-    margin-top: -20px;
-    background-color: #000;
-    position: absolute;
-    padding: 10px;
-    font-family: "Montserrat Subrayada";
-    font-size: 15px;
-  }
   h2 {
     text-align: center;
     font-family: 'Inter';
     color:#404040;
     margin: 10px;
   }
-  .box-4 img {
-    width: 80%;
-    height: 300px;
+  .box-4 img, .skincare img {
     border-radius: 50px;
     position: relative;
+    height: 300px;
+    overflow: hidden;
   }
-  .box-4 h3 {
+  .box-4 h3, .skincare h3 {
     color: white;
     margin-top: -20px;
     background-color: #111;
@@ -283,14 +263,18 @@ html {
     text-align: center;
     margin-left: 6%;
   }
-.box-4 {
+.box-4, .skincare {
     display: flex;
     justify-content: center;
     margin-left: 5%;
+    align-items: center;
 }
-.box-4 li {
+.box-4 li, .skincare li {
   flex-grow: 1;
   flex-basis: 0;
+  width: 180px;
+  height: 300px;
+  overflow: hidden;
 }
   /*product card*/
   .card h4 {
@@ -306,7 +290,7 @@ html {
     height: 280px;
     width: 200px;
     list-style: none;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid #595959;
     border-radius: 25px;
     background-color: #ffffff;
     position: relative;
@@ -314,15 +298,16 @@ html {
   .card img {
     position: relative;
     margin: 0px;
-    width: 90%;
+    width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
   }
   .prod-price {
     font-size: 16px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: #373737;
+    font-weight: bold;
+    text-decoration: underline;
     margin: 0px;
     padding-bottom: 5px;
   }
@@ -330,7 +315,7 @@ html {
     position: relative;
     font-size: 13px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.36);
+    color: #595959;
     margin-top: 12px;
   }
   .add-cart {
@@ -410,6 +395,23 @@ html {
   .wrapper .carousel, .wrap .box{
     grid-auto-columns: 100%;
   }
+  .box-4, .box-4 img, .skincare, .skincare img {
+    width: 80%;
+  }
+  .thisweek {
+    flex-direction: column;
+  }
+  .box-4 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+.this {
+  flex-direction: column;
+}
+.box-4 {
+  flex-direction: column;
+}
 }
 .box h3 {
   font-size: 1.5em;
